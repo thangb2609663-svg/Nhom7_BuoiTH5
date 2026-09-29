@@ -1,37 +1,139 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lợi ích của công nghệ số trong học tập</title>
-<style>
-body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px;line-height:1.6}
-h1{text-align:center} .box{border:1px solid #ccc;border-radius:12px;padding:18px;margin:15px 0}
-img,video{max-width:100%;display:block;margin:15px auto}
-.note{font-size:14px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lợi ích của công nghệ số trong học tập</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <style>
+    :root {
+      --ink: #12343b;
+      --text: #24393e;
+      --muted: #5b7076;
+      --accent: #0e7c86;
+      --sun: #f2b134;
+      --bg: #f2f7f8;
+      --card: #ffffff;
+      --line: #d5e3e6;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--ink);
+      color: #fff;
+      padding: 64px 20px 72px;
+      border-bottom: 6px solid var(--sun);
+    }
+    .wrap { max-width: 880px; margin: 0 auto; }
+    header h1 {
+      margin: 0 0 16px;
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    header p {
+      margin: 0;
+      max-width: 60ch;
+      font-size: 1.05rem;
+      color: #c9dde0;
+    }
+    .badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 56px; height: 56px; margin-bottom: 20px;
+      border-radius: 14px; background: var(--sun); color: var(--ink); font-size: 1.6rem;
+    }
+    section h2 i { color: var(--accent); margin-right: 10px; }
+    .lead i { color: var(--sun); margin-right: 6px; }
+    figcaption i, footer p i { color: var(--accent); margin-right: 6px; }
+    main { padding: 40px 20px 24px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 32px;
+    }
+    section h2 {
+      margin: 0 0 6px;
+      font-size: 1.4rem;
+      color: var(--ink);
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+    }
+    .lead { margin: 0 0 20px 17px; color: var(--muted); font-size: .95rem; }
+    figure { margin: 0; }
+    img, video {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      background: #e6eef0;
+    }
+    video { aspect-ratio: 16 / 9; background: #000; }
+    figcaption { margin-top: 10px; font-size: .88rem; color: var(--muted); text-align: center; }
+    footer {
+      padding: 8px 20px 48px;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+    footer .wrap { border-top: 1px solid var(--line); padding-top: 20px; }
+    footer p { margin: 0 0 6px; }
+    :focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+    @media (max-width: 560px) {
+      header { padding: 44px 16px 52px; }
+      section { padding: 18px; }
+    }
+  </style>
 </head>
 <body>
-<h1>Lợi ích của công nghệ số trong học tập</h1>
-<div class="box">
-<h2>Infographic</h2>
-<p>Tiếp cận thông tin nhanh chóng; hỗ trợ làm việc nhóm; tạo nội dung số;
-hỗ trợ AI; sử dụng công nghệ có trách nhiệm.</p>
-</div>
-<div class="box">
-<h2>Video</h2>
-<p>Video giới thiệu lợi ích của công nghệ số trong học tập.</p>
-<!-- Thay video.mp4 bằng file video đã tạo -->
-<video controls>
-<source src="video.mp4" type="video/mp4">
-Trình duyệt không hỗ trợ video.
-</video>
-</div>
-<div class="box">
-<h2>Ghi chú bản quyền</h2>
-<p>Infographic tạo bởi Canva AI, hình ảnh từ Unsplash (CC0).</p>
-<p>Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0).</p>
-<p>Code HTML được hỗ trợ bởi GitHub Copilot.</p>
-</div>
+  <header>
+    <div class="wrap">
+      <div class="badge" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+      <h1>Lợi ích của công nghệ số trong học tập</h1>
+      <p>Xem infographic tóm tắt và video ngắn để hiểu công nghệ số giúp việc học hiệu quả hơn như thế nào.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2><i class="fa-solid fa-chart-pie" aria-hidden="true"></i>Infographic</h2>
+      <p class="lead">Các lợi ích chính của công nghệ số, trình bày bằng hình ảnh.</p>
+      <figure>
+        <img src="Phan2_Infographic.png" alt="Infographic về lợi ích của công nghệ số trong học tập" loading="lazy">
+        <figcaption><i class="fa-solid fa-palette" aria-hidden="true"></i>Infographic tạo bởi Canva AI</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2><i class="fa-solid fa-circle-play" aria-hidden="true"></i>Video</h2>
+      <p class="lead">Video ngắn minh họa việc ứng dụng công nghệ số trong học tập.</p>
+      <figure>
+        <video controls preload="metadata">
+          <source src="Phan2_Video.mp4" type="video/mp4">
+          Trình duyệt của bạn không hỗ trợ video này.
+        </video>
+        <figcaption><i class="fa-solid fa-film" aria-hidden="true"></i>Video dựng bằng CapCut</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong><i class="fa-regular fa-copyright" aria-hidden="true"></i>Bản quyền và nguồn tư liệu</strong></p>
+      <p><i class="fa-solid fa-image" aria-hidden="true"></i>Infographic tạo bởi Canva AI, hình ảnh từ Unsplash (CC0). Video tạo bởi CapCut, tài liệu từ Pexels và FreeSound (CC0).</p>
+      <p><i class="fa-solid fa-code" aria-hidden="true"></i>Mã HTML được tạo với sự hỗ trợ của AI (Claude/GitHub Copilot). Giấy phép CC BY.</p>
+    </div>
+  </footer>
 </body>
 </html>
